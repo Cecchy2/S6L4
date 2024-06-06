@@ -5,60 +5,31 @@
 @import "../../bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$blue: #1e90ff;
-// $card-title-color: orange;
-// $card-subtitle-color: blue;
-// $card-color: palevioletred;
 
-$enable-negative-margins: true;
+$btn-padding-x: 2.75rem;
+$btn-padding-y: 0.75rem;
 
-$prefix: bshit-;
-// $spacer: 0.25rem;
-$card-spacer-y: 0.25rem;
-$card-spacer-x: 0.25rem;
-// $border-width: 3px;
-$card-border-width: 3px;
-$grid-gutter-width: 0.25rem;
+$grid-gutter-width: 0.5rem;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/variables-dark";
 
-// posso andare a modificare qualcosa di specifico come il colore di bg di una card qui sotto, il vantaggio è che posso riferirmi a variabili esistenti.
-// $card-bg: $green-600;
-
-// lo svantaggio è che alcune variabili nel foglio variables generano altri elementi, come le mappe, che a questo punto si saranno già generate.
-// modificare $blue qui sotto non è la stessa cosa che farlo prima. modificheremmo sì il valore attuale di $blue, ma solo di quello.
-// non da tutti gli elementi e le mappe che dipendevano da $blue.
-// se il nostro scopo è modificare tutto quello che si riferisce a $blue è meglio farlo prima.
-
 // 4. Include any default map overrides here
-
-// qui possiamo andare ad estendere le mappe con nuovi valori (anche di variabili)
-$custom-theme-colors: (
-  "stefano-a": purple,
-  "stefano-b": violet,
-  "light-dark": $gray-500
-    // qui posso usare delle variabili per le mappe, perché le variabili sono state già importate sopra.,,
+$altri-fs: (
+  7: 0.9rem,
+  8: 0.8rem,
+  9: 0.75rem,
+  10: 0.5rem,
 );
 
-$theme-colors: map-merge($theme-colors, $custom-theme-colors);
-
-$custom-spacers: (
-  6: 6rem,
-  7: 7rem,
-  8: 8rem,
-  9: 9rem,
-  10: 10rem,
+$additional-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
 );
-
-$spacers: map-merge($spacers, $custom-spacers);
-
-$additional-grid-breakpoints: (3-xl: 1600px, 4-xl: 1800px);
-$grid-breakpoints: map-merge($grid-breakpoints, $additional-grid-breakpoints);
-
-$additional-container-max-widths: (3-xl: 1520px, 4-xl: 1720px);
-$container-max-widths: map-merge($container-max-widths, $additional-container-max-widths);
 
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
@@ -90,13 +61,13 @@ $container-max-widths: map-merge($container-max-widths, $additional-container-ma
 @import "../../bootstrap/scss/progress";
 @import "../../bootstrap/scss/list-group";
 @import "../../bootstrap/scss/close";
-// @import "../../bootstrap/scss/toasts";
-// @import "../../bootstrap/scss/modal";
-// @import "../../bootstrap/scss/tooltip";
-// @import "../../bootstrap/scss/popover";
+//@import "../../bootstrap/scss/toasts";
+//@import "../../bootstrap/scss/modal";
+//@import "../../bootstrap/scss/tooltip";
+//@import "../../bootstrap/scss/popover";
 @import "../../bootstrap/scss/carousel";
-// @import "../../bootstrap/scss/spinners";
-// @import "../../bootstrap/scss/offcanvas";
+//@import "../../bootstrap/scss/spinners";
+//@import "../../bootstrap/scss/offcanvas";
 @import "../../bootstrap/scss/placeholders";
 @import "../../bootstrap/scss/helpers";
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`

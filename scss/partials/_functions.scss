@@ -1,23 +1,8 @@
-$altri-fs: (
-  7: 0.9rem,
-  8: 0.8rem,
-  9: 0.75rem,
-  10: 0.5rem,
-);
-
 @each $key, $value in $altri-fs {
   .fs-#{$key} {
     font-size: $value;
   }
 }
-
-$additional-border-widths: (
-  6: 6px,
-  7: 7px,
-  8: 8px,
-  9: 9px,
-  10: 10px,
-);
 
 @each $key, $value in $additional-border-widths {
   .border-#{$key} {
