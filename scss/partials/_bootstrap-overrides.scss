@@ -16,6 +16,9 @@ $card-color: "$info";
 $card-border-radius: 2rem;
 $danger: #ff0077;
 $light: #00ffea;
+
+$badge-border-radius: 30px;
+$btn-border-radius: 30px;
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/variables-dark";
@@ -35,7 +38,19 @@ $additional-border-widths: (
   9: 9px,
   10: 10px,
 );
+$EpicodeColors: (
+  epicode-1: #5726c3,
+  epicode-2: #8625a5,
+  epicode-3: #cb2376,
+);
 
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    "3xl": 1600px,
+    "4xl": 1800px,
+  )
+);
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
 @import "../../bootstrap/scss/mixins";

@@ -1,2 +1,10 @@
 @import "./partials/bootstrap-overrides.scss";
 @import "./partials/functions";
+
+$container-max-widths: map-merge(
+  $container-max-widths,
+  (
+    "3xl": 1520px,
+    "4xl": 1720px,
+  )
+);

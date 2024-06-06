@@ -9,3 +9,8 @@
     border-width: $value;
   }
 }
+@each $key, $value in $EpicodeColors {
+  .color-#{$key} {
+    color: $value;
+  }
+}
