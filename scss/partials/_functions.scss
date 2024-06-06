@@ -10,3 +10,17 @@ $altri-fs: (
     font-size: $value;
   }
 }
+
+$additional-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
+@each $key, $value in $additional-border-widths {
+  .border-#{$key} {
+    border-width: $value;
+  }
+}
