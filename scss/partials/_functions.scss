@@ -1,0 +1,12 @@
+$altri-fs: (
+  7: 0.9rem,
+  8: 0.8rem,
+  9: 0.75rem,
+  10: 0.5rem,
+);
+
+@each $key, $value in $altri-fs {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
